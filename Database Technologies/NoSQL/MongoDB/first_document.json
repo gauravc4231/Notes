@@ -1,0 +1,55 @@
+db.post.insert({
+"title":"MongoDB Overview",
+"Description":"MongoDB is no sql",
+"by":"Tutorials point",
+"url":"http://www.tutorialpoint.com",
+"tags":['mongodb','database','NoSQL'],
+"likes":100,
+"comments":[
+{
+"user":'user1',
+"message":'My first comment',
+"dataCeated":new Date(2011,1,20,2,15),
+"like":0
+},
+{
+"user":'user2',
+"message":new Date(2011,1,25,7,45),
+"like":5 
+}
+]
+})
+
+
+##########Correct code#######
+
+training> db.post.insert({
+... "title":"MongoDB Overview",
+... "Description":"MongoDB is no sql",
+... "by":"Tutorials point",
+... "url":"http://www.tutorialpoint.com",
+... "tags":['mongodb','database','NoSQL'],
+... "likes":100,
+... "comments":[
+... {
+... "user":'user1',
+... "message":'My first comment',
+... "dataCeated":new Date(2011,1,20,2,15),
+... "like":0
+... },
+... {
+... "user":'user2',
+... "message":new Date(2011,1,25,7,45),
+... "like":5
+... }
+... ]
+... })
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("6386ee4b9ab7a6544a3833bd") }
+}
+
+
+
+

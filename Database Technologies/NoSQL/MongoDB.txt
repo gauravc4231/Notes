@@ -1,0 +1,13 @@
+
+ dept_name | empid | name   | salary
+-----------+-------+--------+--------
+      Tech |     1 | Gaurav | 300000
+
+(1 rows)
+
+ dept_name | empid | name    | salary
+-----------+-------+---------+--------
+      sale |     3 | Ajinkya | 300000
+      Tech |     1 |  Gaurav | 300000
+
+(2 rows)
